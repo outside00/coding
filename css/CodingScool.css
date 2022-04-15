@@ -16,6 +16,7 @@ header .container {
 }
 
 header nav {
+    display: none;
     width: 100%;
     background-color: rgb(37, 37, 146);
 }
@@ -144,4 +145,33 @@ footer {
 .footer-flex-box .sns > a {
     display: inline-block;
     margin-right: 15px;
+}
+
+/* =============== tablet =============== */
+@media screen and (min-width:768px) {
+    header nav {
+        display: block;
+    }
+    
+    #trigger {
+        display: none;
+    }
+    /* gnb */
+.gnb { /* 플렉스 박스 = 메뉴를 가로배치 */
+    flex-direction: row; /* 수직배치로 시켜놓기 */
+}
+
+.gnb > li {
+    width: 25%;
+}
+
+.gnb > li > a {
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 0;
+}
+
+.gnb > li:last-child > a {
+    border-right: 0;
+}
+
 }
