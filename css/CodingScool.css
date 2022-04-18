@@ -195,6 +195,7 @@ footer {
     .coding-flex-box .coding-img {
         display: block;
     }
+
     .coding-flex-box .coding-img > img {
         width: 100%;
     }
@@ -224,5 +225,51 @@ footer {
 
     .footer-flex-box > address {
         width: 80%;
+    }
+}
+
+
+/* =============== pc버전 ============== */
+@media screen and (min-width:1024px) {
+    
+    /*  header  */
+    .gnb > li > a {
+        padding: 20px;
+    }
+
+    /* main */
+    section > h2 {
+        margin-top: 20px;
+        margin-bottom: 80px;
+        font-size: 26px;
+    }
+
+    /* coding */
+    .coding-flex-box > div:first-child {
+        width: 55%;
+    }
+    .coding-flex-box > div:last-child {
+        width: 25%;
+        text-align: center;
+    }
+
+    .coding-flex-box .coding-img > img {
+        width: 80%;
+    }
+
+    .coding-flex-box > div:first-child > p {
+        font-size: 18px;
+    }
+
+    /* saying */
+    .saying p {
+        margin: 30px 20%;
+        font-size: 18px;
+    }
+
+    .saying strong {
+        margin-bottom: 30px;
+        color: gray;
+        font-size: 16px;
     }
 }
